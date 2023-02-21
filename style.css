@@ -1,0 +1,24 @@
+:root {
+  -white: hsl(0, 0%, 100%);
+  -light-grey: hsl(217, 12%, 63%);
+  -medium-grey: hsl(216, 12%, 54%);
+  -dark-blue: hsl(213, 19%, 18%);
+  -very-dark-blue: hsl(216, 12%, 8%);
+  -orange: hsl(25, 97%, 53%);
+  -font-w-l: 400;
+  -font-w-h: 700;
+  -media-m: 375px;
+  -desktop: 1440px;
+  -font-size-p: 15px;
+}
+
+body {
+  font-family: "Anton", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Overpass", sans-serif;
+  font-family: "Permanent Marker", cursive;
+}
+
+.hidden {
+  display: none;
+}
