@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Overpass:ital,wght@0,400;0,700;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
-</head>
-<body>
-<main>
-  <div>
-    <img src="/interactive-rating-component-main/images/icon-star.svg" alt="">
-   <h3>How did we do?</h3> 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p> 
-    <ul>
-          <li><button>1</button></li>
-          <li><button>2</button></li>
-          <li><button>3</button></li>
-          <li><button>4</button></li>
-          <li><button>5</button></li>
-    </ul>
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Overpass:ital,wght@0,400;0,700;1,700&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div id="card">
+        <div class="star">
+          <img
+            src="/interactive-rating-component-main/images/icon-star.svg"
+            alt="imagen-star"
+          />
+        </div>
+        <h3 class="title1">How did we do?</h3>
 
-  <input type="submit" name="submit" value="submit" > 
-  </div>
-  <div class="hidden">
-    <article>
-        <img src="/interactive-rating-component-main/images/illustration-thank-you.svg" alt="ilustration thank you">
-        
-        <h3> Thank you!</h3>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-        don’t hesitate to get in touch!</p>
-    </article>
-  </div>
-</main>
-  
-  
- 
+        <p class="p1">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul id="buttons">
+          <li><button id="1">1</button></li>
+          <li><button id="2">2</button></li>
+          <li><button id="3">3</button></li>
+          <li><button id="4">4</button></li>
+          <li><button id="5">5</button></li>
+        </ul>
 
-  
+        <input
+          id="submit"
+          onclick="mostrar();"
+          type="submit"
+          name="submit"
+          value="SUBMIT"
+        />
+      </div>
 
-  <!-- Thank you state end -->
-</body>
+      <div id="carta2">
+        <article class="container2">
+          <img
+            src="/interactive-rating-component-main/images/illustration-thank-you.svg"
+            alt="ilustration thank you"
+          />
+          <div id="text" class="emergent"></div>
+          <h3 class="title2">Thank you!</h3>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </article>
+      </div>
+    </main>
+    <script src="/main.js"></script>
+    <!-- Thank you state end -->
+  </body>
 </html>
